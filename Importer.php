@@ -206,8 +206,6 @@ class Importer {
 
         $q->write_query() ;
 
-        echo Test::print_pre( $q->__get( "statement" ) ) ;
-
         $q->run( $this->permission ) ;
         return TRUE ;
     }
